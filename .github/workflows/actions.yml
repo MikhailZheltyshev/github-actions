@@ -1,4 +1,4 @@
-name: Actions Workflow
+name: Actions Workflow Develop
 
 on: [push, pull_request]
 
