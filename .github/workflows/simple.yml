@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: echo a string
         run: echo a
+      - name: sleep for a while
+        run: sleep 10
       - name: multiline script
         run: |
           node -v
@@ -19,6 +21,7 @@ jobs:
         shell: python
   run-bash-commands:
     runs-on: windows-latest
+    needs: [run-shell-command]
     steps:
       - name: Power shell example
         run: Get-Location
