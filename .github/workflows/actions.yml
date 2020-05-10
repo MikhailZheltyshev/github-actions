@@ -1,8 +1,11 @@
 name: Actions Workflow Develop
 
 on:
-  repository_dispatch:
-    types: [build]
+  push:
+    branches:
+      - master
+  #repository_dispatch:
+  #  types: [build]
   #push:
   #schedule:
   #  - cron: "0/5 * * * *"
